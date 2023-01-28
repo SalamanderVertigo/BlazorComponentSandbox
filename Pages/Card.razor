@@ -1,0 +1,42 @@
+﻿@page "/card"
+
+<JGCard Id="Card1">
+    <CardHeader Template="CardHeaderTemplateType.Standard">
+        <p style="color: whitesmoke">Example 1</p>
+    </CardHeader>
+    <CardContent>
+        <p style="color: whitesmoke">Content 1</p>
+    </CardContent>
+</JGCard>
+
+<JGCard Id="Card2">
+    <CardHeader Template="CardHeaderTemplateType.Avatar" />
+    <CardContent>
+        <p style="color: whitesmoke">Content 2</p>
+    </CardContent>
+</JGCard>
+
+<h3> Cards looping over a Grid</h3>
+<JGGrid>
+    @{
+        for (var i = 0; i <= 3; i++)
+        {
+            <GridRow NumColumns="3">
+                <GridColumn>
+                    <JGCard>
+                        <CardHeader>
+                            <p style="color: whitesmoke">Header Text</p>
+                        </CardHeader>
+                        <CardContent>
+                            <p style="color: whitesmoke">Content</p>
+                        </CardContent>
+                    </JGCard>
+                </GridColumn>
+            </GridRow>
+        }
+    }
+</JGGrid>
+
+@code {
+   
+}

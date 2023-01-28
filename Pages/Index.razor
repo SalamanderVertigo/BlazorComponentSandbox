@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<JGDialog Open="@isOpen">
+    <DialogHeader>Header []</DialogHeader>
+    <DialogContent>Content []</DialogContent>
+    <DialogFooter>
+        <button onclick="@ToggleDialog"> Close</button>
+        <button onclick="@ToggleDialog"> Ok</button>
+    </DialogFooter>
+</JGDialog>
+
+<button onclick="@ToggleDialog"> Click to Open</button>
+
+@code {
+
+    private bool isOpen;
+
+    private void ToggleDialog()
+    {
+        isOpen = !isOpen;
+    }
+}

@@ -1,0 +1,12 @@
+.jg-card-container {
+    border: 1px solid whitesmoke;
+    height: 250px;
+    width: 250px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.card-inner-border {
+    height: 100%;
+    background-color: cadetblue;;
+}

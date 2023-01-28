@@ -1,0 +1,13 @@
+.card-header-content[b-spx9tlvcug] {
+    text-align: center;
+    height: 50px;
+    background-color: seagreen;
+}
+.card-header-avatar[b-spx9tlvcug] {
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+}
+.card-header-avatar-left[b-spx9tlvcug] {
+    margin-right: auto;
+}

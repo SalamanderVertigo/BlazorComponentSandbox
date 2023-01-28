@@ -1,0 +1,23 @@
+﻿@page "/grid"
+
+
+<div style="border-bottom: 1px solid; width:  100%">_</div>
+
+
+<JGGrid>
+    @{
+        for (var i = 0; i <= 10; i++)
+        {
+            var index = i;
+            <GridRow NumColumns="3">
+                <GridColumn>
+                    <p>@($"col 1.{index}")</p>
+                </GridColumn>
+            </GridRow>
+        }
+    }
+</JGGrid>
+
+@code {
+
+}

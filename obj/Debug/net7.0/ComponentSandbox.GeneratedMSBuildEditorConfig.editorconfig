@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ComponentSandbox
+build_property.RootNamespace = ComponentSandbox
+build_property.ProjectDir = C:\Users\jonmg\projects\ComponentSandbox\ComponentSandbox\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jonmg\projects\ComponentSandbox\ComponentSandbox
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Dialog/DialogContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dcRGlhbG9nQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Dialog/DialogFooter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dcRGlhbG9nRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Dialog/DialogHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dcRGlhbG9nSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Dialog/JGDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dcSkdEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Pages/Card.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Pages/GridPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JpZFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Avatar/Avatar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBdmF0YXJcQXZhdGFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-2smi7504yu
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Card/CardContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkXENhcmRDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-yw6aw36vc4
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Card/CardHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkXENhcmRIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-spx9tlvcug
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Card/JGCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkXEpHQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-jay4nq2zx5
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Grid/GridColumn.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHcmlkXEdyaWRDb2x1bW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0e7x4ddxu0
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Grid/GridRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHcmlkXEdyaWRSb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2sth0vmi19
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Components/Grid/JGGrid.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHcmlkXEpHR3JpZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-vai7xjhvdg
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-66umvssz52
+
+[C:/Users/jonmg/projects/ComponentSandbox/ComponentSandbox/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-evpx4rp0ap

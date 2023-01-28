@@ -1,0 +1,42 @@
+﻿
+
+<div class="card-header-content">
+    @{
+        switch(Template)
+        {
+            case CardHeaderTemplateType.Standard:
+            /*This will be a simple text header*/
+                <div class="card-header-standard">@ChildContent</div>
+                break;
+            case CardHeaderTemplateType.Avatar:
+            @* display will be in line and left will be avatar, right will be some button thing*@
+                <div class="card-header-avatar">
+                    <div class="card-header-avatar-left">
+                        <p>(Name...)</p>
+                    </div>
+                    <div class="card-header-avatar-right">
+                        <Avatar />
+                    </div>
+                </div>
+                break;
+            case CardHeaderTemplateType.Custom:
+            /* whatever child content the developer decides to render*/
+                <div class="card-header-custom">@ChildContent</div>
+                break;
+            default:
+                <div class="card-header-default"><p>Default</p></div>
+                break;
+        }
+    }
+    
+</div>
+
+@code {
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public CardHeaderTemplateType Template { get; set; } = CardHeaderTemplateType.Standard;
+
+}
