@@ -17,4 +17,12 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\Card\Templates\CardHeaderTemplate.razor" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Templates" />
+    </ItemGroup>
+
 </Project>

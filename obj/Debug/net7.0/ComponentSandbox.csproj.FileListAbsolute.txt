@@ -833,3 +833,4 @@ C:\Users\jonmg\projects\ComponentSandbox\ComponentSandbox\obj\Debug\net7.0\scope
 C:\Users\jonmg\projects\ComponentSandbox\ComponentSandbox\obj\Debug\net7.0\scopedcss\Components\Card\CardHeader.razor.rz.scp.css
 C:\Users\jonmg\projects\ComponentSandbox\ComponentSandbox\obj\Debug\net7.0\scopedcss\Components\Card\CardContent.razor.rz.scp.css
 C:\Users\jonmg\projects\ComponentSandbox\ComponentSandbox\obj\Debug\net7.0\scopedcss\Components\Avatar\Avatar.razor.rz.scp.css
+C:\Users\jonmg\projects\ComponentSandbox\ComponentSandbox\obj\Debug\net7.0\scopedcss\Pages\Card.razor.rz.scp.css

@@ -7,18 +7,11 @@
     
 }
 /* /Components/Card/CardHeader.razor.rz.scp.css */
-.card-header-content[b-spx9tlvcug] {
+.card-header-container[b-spx9tlvcug] {
     text-align: center;
     height: 50px;
     background-color: seagreen;
-}
-.card-header-avatar[b-spx9tlvcug] {
-    display: inline-flex;
-    padding: 10px;
     width: 100%;
-}
-.card-header-avatar-left[b-spx9tlvcug] {
-    margin-right: auto;
 }
 /* /Components/Card/JGCard.razor.rz.scp.css */
 .jg-card-container[b-jay4nq2zx5] {
@@ -46,6 +39,15 @@
 /* /Components/Grid/JGGrid.razor.rz.scp.css */
 .jg-grid-container[b-vai7xjhvdg] {
     
+}
+/* /Pages/Card.razor.rz.scp.css */
+.card-header-avatar[b-ibxs2mznqn] {
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+}
+.card-header-avatar-left[b-ibxs2mznqn] {
+    margin-right: auto;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-66umvssz52] {

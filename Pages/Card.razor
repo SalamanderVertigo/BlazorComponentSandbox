@@ -1,7 +1,7 @@
 ﻿@page "/card"
 
 <JGCard Id="Card1">
-    <CardHeader Template="CardHeaderTemplateType.Standard">
+    <CardHeader >
         <p style="color: whitesmoke">Example 1</p>
     </CardHeader>
     <CardContent>
@@ -10,7 +10,16 @@
 </JGCard>
 
 <JGCard Id="Card2">
-    <CardHeader Template="CardHeaderTemplateType.Avatar" />
+    <CardHeader>
+        <div class="card-header-avatar">
+            <div class="card-header-avatar-left">
+                <p>(Name...)</p>
+            </div>
+            <div class="card-header-avatar-right">
+                <Avatar Name="JG" />
+            </div>
+       </div>
+    </CardHeader>
     <CardContent>
         <p style="color: whitesmoke">Content 2</p>
     </CardContent>

@@ -1,13 +1,6 @@
-.card-header-content {
+.card-header-container {
     text-align: center;
     height: 50px;
     background-color: seagreen;
-}
-.card-header-avatar {
-    display: inline-flex;
-    padding: 10px;
     width: 100%;
-}
-.card-header-avatar-left {
-    margin-right: auto;
 }

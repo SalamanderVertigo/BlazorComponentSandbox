@@ -1,0 +1,8 @@
+﻿.card-header-avatar {
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+}
+.card-header-avatar-left {
+    margin-right: auto;
+}
