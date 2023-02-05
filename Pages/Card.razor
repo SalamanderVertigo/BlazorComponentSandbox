@@ -1,4 +1,5 @@
 ﻿@page "/card"
+@using ComponentSandbox.Models
 
 <JGCard Id="Card1">
     <CardHeader >
@@ -26,32 +27,36 @@
 </JGCard>
 
 <h3> Cards looping over a Grid</h3>
-<JGGrid>
-    @{
-        for (var i = 0; i <= 3; i++)
-        {
-            <GridRow NumColumns="3">
-                <GridColumn>
-                    <JGCard>
-                        <CardHeader>
-                            <p style="color: whitesmoke">Header Text</p>
-                        </CardHeader>
-                        <CardContent>
-                            <p style="color: whitesmoke">Content</p>
-                        </CardContent>
-                    </JGCard>
-                </GridColumn>
-            </GridRow>
-        }
-    }
+<JGGrid DataSource="@Data" TItem="Person">
+    <GridRow>
+        <GridColumn>
+            <JGCard>
+                <CardHeader>
+                    <p style="color: whitesmoke">@context.FirstName</p>
+                </CardHeader>
+                <CardContent>
+                    <p style="color: whitesmoke">Content</p>
+                </CardContent>
+            </JGCard>
+        </GridColumn>
+    </GridRow>
 </JGGrid>
 
 @code {
-    public string header1 = "Header 1";
 
-    public CardHeaderTemplate? HeaderTemplate = new CardHeaderTemplate()
+    IEnumerable<Person> Data = new List<Person>()
     {
-        Data = "header 1"
+        new Person(){ Id = 0, FirstName = "Jon", LastName = "Gucciardi", Email = "JonG@email.com"},
+        new Person(){ Id = 1, FirstName = "Tom", LastName = "Long", Email = "TomL@email.com"},
+        new Person(){ Id = 2, FirstName = "Stacy", LastName = "Wharswhick", Email = "StacyW@email.com"},
+        new Person(){ Id = 3, FirstName = "Greg", LastName = "Harris", Email = "GregH@email.com"},
+        new Person(){ Id = 4, FirstName = "Mike", LastName = "Comolli", Email = "MikeC@email.com"},
+        new Person(){ Id = 5, FirstName = "Oriana", LastName = "Comolli", Email = "OrianaC@email.com"},
+        new Person(){ Id = 6, FirstName = "Bapa", LastName = "Gucciardi", Email = "BapaG@email.com"},
+        new Person(){ Id = 7, FirstName = "Gabrielle", LastName = "Gucciardi", Email = "GabrielleGT@email.com"},
+        new Person(){ Id = 8, FirstName = "Clayton", LastName = "Berger", Email = "ClaytonB@email.com"},
+        new Person(){ Id = 9, FirstName = "Tasha", LastName = "Unknown", Email = "TashaU@email.com"},
+        new Person(){ Id = 10, FirstName = "Blazor", LastName = "Wasm", Email = "BlazorW@email.com"},
     };
 
 }

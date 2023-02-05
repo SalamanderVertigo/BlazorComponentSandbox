@@ -1,17 +1,8 @@
 ﻿<row class="jg-grid-row">
-    @{
-        for (var i = 1; i <= NumColumns; i++)
-        {
-            @ChildContent
-        }
-    }
+    @ChildContent
 </row>
 
 @code {
     [Parameter] public RenderFragment? ChildContent { get; set; }
     
-    // summary
-    // Determines the number of columns in a given row
-    //summary
-    [Parameter] public int NumColumns { get; set; }
 }
