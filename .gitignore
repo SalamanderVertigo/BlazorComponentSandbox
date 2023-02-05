@@ -346,7 +346,8 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
-
+.bin/*
+.obj/*
 # Local History for Visual Studio
 .localhistory/
 
@@ -364,5 +365,3 @@ FodyWeavers.xsd
 
 #Rider
 .idea/
-
-bin

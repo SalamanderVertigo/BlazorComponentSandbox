@@ -16,9 +16,9 @@
                 <p>(Name...)</p>
             </div>
             <div class="card-header-avatar-right">
-                <Avatar Name="JG" />
+                <Avatar Name="JG"/>
             </div>
-       </div>
+        </div>
     </CardHeader>
     <CardContent>
         <p style="color: whitesmoke">Content 2</p>
@@ -47,5 +47,11 @@
 </JGGrid>
 
 @code {
-   
+    public string header1 = "Header 1";
+
+    public CardHeaderTemplate? HeaderTemplate = new CardHeaderTemplate()
+    {
+        Data = "header 1"
+    };
+
 }
