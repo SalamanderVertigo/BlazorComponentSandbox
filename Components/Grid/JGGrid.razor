@@ -2,19 +2,33 @@
 
 @if (DataSource is not null)
 {
-    
-    <div class="jg-grid-container">
-        @foreach (TItem item in DataSource ?? Array.Empty<TItem>())
+    <div class="jg-grid-container @(Virtualize ? "virtual" : "")">
+    @if (Virtualize)
+    {
+        <Virtualize Items="@DataSource" TItem="TItem">
+            @ChildContent(context)
+        </Virtualize>
+    }
+    else
+    {
+        foreach (TItem item in DataSource ?? Array.Empty<TItem>())
         {
-            @ChildContent(item)
-        }
+            <div>
+                @ChildContent(item)
+            </div>
+        } 
+    }
     </div>
     
 }
 
 
 @code {
-    
-    [Parameter] public IEnumerable<TItem>? DataSource { get; set; }
-    [Parameter] public RenderFragment<TItem>? ChildContent { get; set; }
+    [Parameter] 
+    public ICollection<TItem>? DataSource { get; set; }
+
+    [Parameter]
+    public bool Virtualize { get; set; }
+    [Parameter] 
+    public RenderFragment<TItem>? ChildContent { get; set; }
 }

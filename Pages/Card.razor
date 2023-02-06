@@ -27,15 +27,16 @@
 </JGCard>
 
 <h3> Cards looping over a Grid</h3>
-<JGGrid DataSource="@Data" TItem="Person">
-    <GridRow>
+/* TODO: Configure way to handle keys and ids*/
+<JGGrid DataSource="@Data" TItem="Person" Virtualize="true">
+    <GridRow Id="@context.Id.ToString()" Key="@context.Id.ToString()">
         <GridColumn>
             <JGCard>
                 <CardHeader>
                     <p style="color: whitesmoke">@context.FirstName</p>
                 </CardHeader>
                 <CardContent>
-                    <p style="color: whitesmoke">Content</p>
+                    <p style="color: whitesmoke">@context.Email</p>
                 </CardContent>
             </JGCard>
         </GridColumn>
@@ -44,7 +45,7 @@
 
 @code {
 
-    IEnumerable<Person> Data = new List<Person>()
+    ICollection<Person> Data = new List<Person>()
     {
         new Person(){ Id = 0, FirstName = "Jon", LastName = "Gucciardi", Email = "JonG@email.com"},
         new Person(){ Id = 1, FirstName = "Tom", LastName = "Long", Email = "TomL@email.com"},

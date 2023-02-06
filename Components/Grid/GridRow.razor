@@ -1,8 +1,10 @@
-﻿<row class="jg-grid-row">
+﻿<row id="@Id" key="@Key" class="jg-grid-row">
     @ChildContent
 </row>
 
 @code {
+    [Parameter] public string? Id { get; set; }
+    [Parameter] public string? Key { get; set; }
     [Parameter] public RenderFragment? ChildContent { get; set; }
     
 }
