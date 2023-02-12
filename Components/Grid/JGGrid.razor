@@ -1,4 +1,5 @@
 ﻿@typeparam TItem
+@inject IJSRuntime JsRuntime
 
 @if (DataSource is not null)
 {
@@ -31,4 +32,10 @@
     public bool Virtualize { get; set; }
     [Parameter] 
     public RenderFragment<TItem>? ChildContent { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await JsRuntime.InvokeVoidAsync("JGGrid.init");
+    }
+
 }

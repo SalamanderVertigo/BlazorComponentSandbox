@@ -1,0 +1,50 @@
+﻿@using ComponentSandbox.Models
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+@inject GridDataService GridDataService
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var rowData in GridData)
+                    {
+                        <tr draggable="true" @ondragstart="e => DragStart(e, rowData)">
+                            <td>@rowData.Id</td>
+                            <td>@rowData.Name</td>
+                            <td>@rowData.Value</td>
+                        </tr>
+                    }
+        </tbody>
+</table>
+
+@code {
+    private List<GridRowData> GridData { get; set; }
+
+
+    protected override void OnInitialized()
+    {
+        GridData = GridDataService.LoadGridRowData();
+    }
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("JGGrid.setupDragAndDrop");
+        }
+    }
+    
+    private void DragStart(DragEventArgs e, GridRowData rowData)
+    {
+    // Set the drag data to the row data
+        e.DataTransfer.EffectAllowed = "move";
+        
+    }
+}

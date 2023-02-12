@@ -1,6 +1,6 @@
-﻿@inject IJSRuntime JsRuntime
+﻿
 
-<div id="@Id" class="jg-card-container" draggable="true">
+<div id="@Id" class="jg-card-container" draggable="true" >
     <div class="card-inner-border">
         @ChildContent
     </div>
@@ -9,12 +9,5 @@
 @code {
     [Parameter] public string Id { get; set; } = "1";
     [Parameter] public RenderFragment? ChildContent { get; set; }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JsRuntime.InvokeVoidAsync("JGCard.init");
-        }
-    }
+    
 }
