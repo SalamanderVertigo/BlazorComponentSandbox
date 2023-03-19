@@ -1,5 +1,10 @@
-﻿<div title="@ToolTip">
-    @ChildContent
+﻿<div aria-label="@ToolTip" data-title="@ToolTip">
+    @{
+        if (ChildContent is not null)
+        {
+            @ChildContent
+        }
+    }
 </div>
 
 @code {

@@ -2,11 +2,11 @@
 @using ComponentSandbox.Models
 
 <JGCard Id="Card1">
-    <JGToolTip ToolTip="ToolTip 1">
-        <CardHeader >
+    <CardHeader >
+        <JGToolTip ToolTip="ToolTip 1">
             <p style="color: whitesmoke">Example 1</p>
-        </CardHeader>
-    </JGToolTip>
+        </JGToolTip>
+    </CardHeader>
     <CardContent>
         <p style="color: whitesmoke">Content 1</p>
     </CardContent>
@@ -16,10 +16,14 @@
     <CardHeader>
         <div class="card-header-avatar">
             <div class="card-header-avatar-left">
-                <p>(Name...)</p>
+                <JGToolTip ToolTip="Name...">
+                    <p>(Name...)</p>
+                </JGToolTip>
             </div>
             <div class="card-header-avatar-right">
-                <Avatar Name="JG"/>
+                <JGToolTip ToolTip="Avatar...">
+                    <Avatar Name="JG"/>
+                </JGToolTip>
             </div>
         </div>
     </CardHeader>
@@ -35,10 +39,14 @@
         <GridColumn>
             <JGCard>
                 <CardHeader>
-                    <p style="color: whitesmoke">@context.FirstName</p>
+                    <JGToolTip ToolTip="@context.FirstName">
+                        <p style="color: whitesmoke">@context.FirstName</p>
+                    </JGToolTip>
                 </CardHeader>
                 <CardContent>
-                    <p style="color: whitesmoke">@context.Email</p>
+                    <JGToolTip ToolTip="@context.Email">
+                        <p style="color: whitesmoke">@context.Email</p>
+                    </JGToolTip>
                 </CardContent>
             </JGCard>
         </GridColumn>
