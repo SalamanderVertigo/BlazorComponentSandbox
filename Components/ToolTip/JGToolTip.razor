@@ -1,0 +1,8 @@
+﻿<div title="@ToolTip">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string? ToolTip { get; set; }
+}
